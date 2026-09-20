@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: OBMC Entreprenuership Fair Menu</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <nav class="navbar text-center py-3 bg-dark text-light mt-auto">
+        <div class="nav-brand">OBMC Entrep Fair - Dolors Kakanin</div>
+        <ul class="nav-menu">
+            <li>
+                <a href="sku.html" class="active">SKU Generator</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="#">Receipt Generator</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Project: OBMC Entrep Fair - Dolors Kakanin</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">SKU Generator</h2>
+
+                    <label>Perishables Category</label>
+
+                    <select id="category"><br>
+                        <option value="AK">Kakanin</option>
+                    </select>
+
+                    <label>Product Name</label>
+
+                    <select id="product"><br>
+                        <option value="AK9">Assorted Kakanin 9in</option>
+                        <option value="AK13">Assorted Kakanin 13in</option>
+                        <option value="AK17">Assorted Kakanin 17in</option>
+                    </select>
+
+                    <label for="stock">Stock Quantity</label>
+                    <input type="number" id="stock" placeholder="Enter a value" min="1"><br><br>
+
+                    <center><button type="button" class="btn btn-warning mt-3" py-click="generate_sku" value="generate_sku">Generate SKU</button><br></center><br>
+
+                    <h2 class="text-center">Generated SKU</h2>
+                    <center><div id="result"></div></center>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <center><footer>Q1 Project by Joaquin Tabije, 10R: SKU Generator and Receipt Generator</footer></center>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

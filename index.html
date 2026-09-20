@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: OBMC Entreprenuership Fair Menu</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <nav class="navbar text-center py-3 bg-dark text-light mt-auto">
+        <div class="nav-brand">OBMC Entrep Fair - Dolors Kakanin</div>
+        <ul class="nav-menu">
+            <li>
+                <a href="sku.html" class="#">SKU Generator</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="active"> Receipt Generator</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Project: OBMC Entrep Fair - Dolors Kakanin</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Menu:</h2>
+
+                    <input type="checkbox" id="item1-label" name="item1-label" value="295">
+                    <label for="item1-label">Assorted Kakanin 9in (PHP 295)</label><br>
+
+                    <input type="checkbox" id="item2-label" name="item2-label" value="725">
+                    <label for="item2-label">Assorted Kakanin 13in (PHP 725)</label><br>
+
+                    <input type="checkbox" id="item3-label" name="item3-label" value="575">
+                    <label for="item3-label">Assorted Kakanin 17in (PHP 575)</label><br><br>
+
+                    <center><button type="button" class="btn btn-warning mt-3" py-click="create_order" value="create_order">Create Order</button><br></center><br>
+
+                <h2 class="text-center">Receipt</h2>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <center><footer>Q1 Project by Joaquin Tabije, 10R: SKU Generator and Receipt Generator</footer></center>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
